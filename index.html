@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="Developer" content="O.G.W. Saunders">
+    <meta name="Description" content="Index page for lemmiout activities,
+    with logo, twitter feed, go kart slideshow, information about benefits for STEM.">
+    <meta http-equiv="refresh" content="1800">
+    <meta http-equiv="Content-Type" content="text/html">
+
+    <!-- Responsive web page (for mobiles, tablets) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=on user-scalable=no">
+
+    <title>Lemmiout</title>
+  </head>
+  <body>
+
+    <!-- Navigation bar -->
+    <ul class="topnav">
+      <li><h1><span style="color: red;">LEMMIOUT</span> ACTIVITIES</h1></li>
+    </ul>
+    <ul class="topnav">
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="outline.html">Box Car Racers</a></li>
+    </ul>
+
+    <!--Content -->
+    <div class="content">
+      <div class="page-head">
+        <img class="logo" src="./assets/images/lemmiLogo.jpg">
+
+        <div class="intro" onClick="introToAbout()">
+          <div class="aboutUs">
+            <div class="aboutUsWords">
+              About Us
+            </div>
+          </div>
+
+          <div class="aboutUsDescription">
+            Lemmiout Activities is Run by Rick Walker and Tom Burrett...</p>
+            <p></p>
+            <p><a href="about.html">See more ></a></p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Page introduction -->
+      <div class="page-body">
+        <div class="stem highlight" onclick="boxToOutline()">
+          <h2>Promoting STEM</h2>
+          <p>Offering schools a chance to undertake <strong>science,
+            technology, engineering and maths</strong> actively and <strong>outdoors.</strong></p>
+          <button class="btn-red" href="outline.html">See more</button>
+        </div>
+
+        <div class="curriculum highlight" onclick="boxToOutline()">
+          <h2>Welsh National Curriculum</h2>
+          <p>Activities based on the <strong>Welsh National Curriculum</strong>,
+             designed as stimulating and exciting projects for all abilities and
+             learning needs.</p>
+          <button class="btn-red" href="outline.html">See more</button>
+        </div>
+
+        <script>
+          function introToAbout(){
+            window.location.replace("about.html");
+          }
+          function boxToOutline(){
+            window.location.replace("outline.html");
+          }
+        </script>
+
+
+        <div class="twitter">
+          <h2> Join our growing community </h2>
+
+          <div class="feed">
+            <a class="twitter-timeline" data-width="400" data-height="600" data-tweet-limit="3" data-chrome="noscrollbar nofooter noheader"
+            data-link-color="#E81C4F" href="https://twitter.com/LemmioutA?ref_src=twsrc%5Etfw">Tweets by LemmioutA</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+
+          <div class="follow">
+            <a class="twitter-follow-button" href="https://twitter.com/LemmioutA"
+            data-size="large" data-show-count="false"> Follow @LemmioutA</a>
+          </div>
+
+          <div class="tweet">
+            <a href="https://twitter.com/intent/tweet?screen_name=LemmioutA&ref_src=twsrc%5Etfw"
+            class="twitter-mention-button" data-size="large" data-show-count="false">Tweet to @LemmioutA</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+
+        </div>
+
+        <div class="whatWeDo">
+          <h2> What we do </h2>
+          <!-- Slideshow using Carousel (JS Function) Regex is /()[a-z]|[0-9])+/i-->
+          <div class="slides" id="slides">
+            <img class="mySlides" alt="A slide in a slideshow. Your browser
+            does not support this image"
+            src="./assets/images/slides/GoKartQ003.jpg">
+            <img class="mySlides"  alt="A slide in a slideshow. Your browser
+            does not support this image"
+            src="./assets/images/slides/GoKartQ016.jpg">
+            <img class="mySlides"  alt="A slide in a slideshow. Your browser
+            does not support this image"
+            src="./assets/images/slides/GoKartQ053.jpg">
+            <img class="mySlides"  alt="A slide in a slideshow. Your browser
+            does not support this image"
+            src="./assets/images/slides/GoKartQ062.jpg">
+            <img class="mySlides"  alt="A slide in a slideshow. Your browser
+            does not support this image"
+            src="./assets/images/slides/GoKartQ091.jpg">
+            <img class="mySlides"  alt="A slide in a slideshow. Your browser
+            does not support this image"
+            src="./assets/images/slides/GoKartQ106.jpg">
+          </div>
+          <div class="whatWeDoText">
+            <h3>Outdoor STEM</h3>
+            <p>
+              Lemmiout Activities are offering a unique STEM based project.
+              It is designed to be a 6 or more lesson based program that
+              includes a Large outdoor event specially tailored to your
+              school and the pupils involved.
+            </p>
+            <h3>IT, Hands On, Lessons</h3>
+            <p>
+              The project is linked into the
+              national curriculum and is delivered using age appropriate IT,
+              physical hands on activity, and exciting lessons that develop as
+              they go along.
+            </p>
+            <h3>Scientific</h3>
+            <p>
+              At the end of the project pupils will have learnt
+              the basics of car design, looking at the science of simple
+              aerodynamics, friction, rolling resistance. All of this as well
+              at team work and collaboration.
+            </p>
+            <h3>Environmentally Friendly</h3>
+            <p>
+              The project uses fully recyclable materials and the actual boxcar
+              chassis and drive train are built to be used time and time again.
+              Thus is sustainable and environmentally conscious.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        var slideIndex = 0;
+
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 7500); // Change image every 2 seconds
+        }
+
+      </script>
+
+      <!-- Footer -->
+      <footer>
+        <p>Lemmiout Activities</p>
+        <div class="breakLine icons">
+          Tel: 07834 162647
+          Email: rick@lemmiout.co.uk
+        </div>
+        <div class="breakLine bottom">
+          All material and content <strong>Copyright © 2019 LemmioutActivites.</strong>
+          LemmioutActivites is not responsible for any content of external sites.
+          Version 1.0.1
+          <br/>
+          <br/>
+        </div>
+      </footer>
+    </div>
+
+
+  </body>
+</html>

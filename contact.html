@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="Developer" content="O.G.W. Saunders">
+    <meta name="Description" content="Contact page for Lemmiout Activities, detailing STEM
+     actvivity leaders, telephone numbers, emails and twitter handle.">
+    <meta http-equiv="refresh" content="1800">
+    <meta http-equiv="Content-Type" content="text/html/php">
+
+    <!-- Responsive web page (for mobiles, tablets) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    shrink-to-fit=on, user-scalable=no">
+
+    <title>Lemmiout</title>
+  </head>
+
+  <body background="./assets/images/vector-green-shade-abstract.JPG">
+
+    <!-- Navigation bar -->
+    <ul class="topnav">
+      <li><h1><span style="color: red;">LEMMIOUT</span> ACTIVITIES</h1></li>
+    </ul>
+    <ul class="topnav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html" class="current">Contact Us</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="outline.html">Box Car Racers</a></li>
+    </ul>
+
+    <!--Content -->
+    <div class="content">
+      <div class="page-head">
+        <img class="logo" alt="Go Kart Image. You browser did not support this
+        image" src="./assets/images/GoKartQ053.jpg">
+      </div>
+
+      <div class="contacts">
+        <div class="tag rick" onclick="markRick()">
+          <p>Rick Walker</p>
+        </div>
+
+        <div class="tag tom" onclick="markTom()">
+          <p>Tom Burrett</p>
+        </div>
+
+        <div class="contactUs">
+          <div class="contactUsWords">
+            Contact Us
+          </div>
+        </div>
+
+        <div class="contactsDescription">
+          <p>
+            Don't use <strong>twitter</strong>? Why not pick up the
+            <strong>phone</strong> and give us a call, or send us an
+            <strong>email</strong>? We'd be delighted to talk to you!
+          </p>
+        </div>
+      </div>
+
+      <script>
+      function markRick(){
+        document.getElementById("tom").innerHTML = "Tom Burrett";
+        document.getElementById("rick").innerHTML = "<strong>Rick Walker</strong>";
+      }
+
+      function markTom(){
+        document.getElementById("rick").innerHTML = "Rick Walker";
+        document.getElementById("tom").innerHTML = "<strong>Tom Burrett</strong>";
+      }
+
+      </script>
+
+      <!-- Page introduction -->
+      <div class="page-contact">
+        <h2>Information</h2>
+        <p>Don't need to contact anyone in particular? Ask away at:</p>
+        <p><strong>Email:</strong> info@lemmiout.co.uk</p>
+        <p><strong>Twitter:</strong><a href="https://twitter.com/messages/compose?recipient_id=1178030062760857601&text=Hi%20Lemmiout%0A"
+        class="twitter-dm-button" data-screen-name="@LemmioutA"> @<u>LemmioutA</u></a></p>
+
+      </div>
+
+      <div class="border">
+      </div>
+
+      <!-- Rick Walker Contact -->
+      <div class="page-contact">
+        <h2 id="rick">Rick Walker</h2>
+        <p><strong>Email:</strong> rick@lemmiout.co.uk</p>
+        <p><strong>Tel:</strong>  07834 162647</p>
+      </div>
+
+      <div class="border">
+      </div>
+
+      <div class="page-contact">
+        <h2 id="tom">Tom Burrett</h2>
+        <p><strong>Email:</strong> tom@lemmiout.co.uk</p>
+        <p><strong>Tel:</strong> Not listed</p>
+      </div>
+
+      <footer>
+        <p>Lemmiout Activities</p>
+        <div class="breakLine bottom">
+          All material and content <strong>Copyright © 2019 LemmioutActivites.</strong>
+          LemmioutActivites is not responsible for any content of external sites.
+          Version 1.0.1
+          <br/>
+          <br/>
+        </div>
+      </footer>
+    </div>
+
+  </body>
+</html>
