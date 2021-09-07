@@ -692,6 +692,15 @@ iframe {
     display: none;
   }
 
+  .aboutEEGS {
+    display: none;
+  }
+
+  .insurance {
+    transform: translate(-30px, 300%);
+    margin: 0px 30px 15px 0px;
+  }
+
   .boxCarRacersh1 {
     display: none;
   }
